@@ -17,6 +17,9 @@ body{
 @media(min-width: 992px){.container{ width: 992px;}}
 @media(min-width: 1200px){.container{ width: 1200px;}}
 /*common setting*/
+img{
+	vertical-align: top;
+}
 h2{
 	position: relative;
 	font-size: 25px;
@@ -54,14 +57,14 @@ h6{
 	.content{
 		width: 385px;
 		padding: 0 45px;
-		margin: 134px 0;
+		margin: 126px 0;
 	}
 }
 @media(min-width: 1200px){
 	.content{
 		width: 485px;
 		padding: 0 60px;
-		margin: 180px 0;
+		margin: 173px 0;
 	}
 }
 .content2{
@@ -73,14 +76,14 @@ h6{
 	.content2{
 		width: 368px;
 		padding: 0 20px;
-		margin: 15px 0;
+		margin: 11px 0;
 	}
 }
 @media(min-width: 992px){
 	.content2{
 		width: 368px;
 		padding: 0 30px;
-		margin: 55px 0;
+		margin: 54px 0;
 	}
 }
 .content p,.content2 p{
@@ -91,7 +94,6 @@ h6{
 	.image-box{
 		display: block;
 		width: 410px;
-		margin-bottom: -5px;
 	}
 }
 @media(min-width: 992px){.image-box{ width: 605px;}}
@@ -102,7 +104,6 @@ h6{
 	.image-box2{
 		display: block;
 		width: 400px;
-		margin-bottom: -5px;
 	}
 }
 @media(min-width: 992px){.image-box2{ width: 620px;}}
@@ -226,14 +227,14 @@ header li a{
 @media(min-width: 768px){
 	#local .content{
 		float: left;
-		margin: 17px 0;
+		margin: 12px 0;
 	}
 	#local .image-box{
 		float: right;
 	}
 }
-@media(min-width: 992px){#local .content{margin: 96px 0;}}
-@media(min-width: 1200px){#local .content{margin: 130px 0;}}
+@media(min-width: 992px){#local .content{margin: 92px 0;}}
+@media(min-width: 1200px){#local .content{margin: 128px 0;}}
 #local .content img{
 	width: 40%;
 }
