@@ -31,7 +31,7 @@ body{
     background: -moz-linear-gradient(top, #e87a90 1%, #fedfe1 100%);
     background: -webkit-linear-gradient(top, #e87a90 1%,#fedfe1 100%);
     background: linear-gradient(to bottom, #e87a90 1%,#fedfe1 100%);
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
 }
 @media(min-width:1200px){
@@ -84,9 +84,9 @@ body{
     }
 }
 @keyframes jump{
-    0%{top:-80px}
-    50%{top: -60px;}
-    100%{top: -80px;}
+    0%{top:-30px}
+    50%{top: -20px;}
+    100%{top: -30px;}
 }
 #content{
     position: relative;
@@ -101,21 +101,28 @@ body{
     animation: jump 1s linear infinite;
 }
 #content .btn{
-    position: relative;
+    position: absolute;
     text-align: center;
     color: #fff;
     font-size: 30px;
+    top: -70px;
+    left: 0;
+    right: 0;
+    width: 140px;
+    margin: auto;
+    text-shadow: 1px 1px 3px #333 , 1px -1px 3px #333 , -1px 1px 3px #333 , -1px -1px 3px #333;
+    z-index: 10;
 }
 #content .btn::before{
     position: absolute;
     display: block;
     content:'▲';
-    width: 10px;
+    width: 20px;
     height: 10px;
     font-size: 18px;
     /* background-color: #fff; */
     top: 5px;
-    left: 65px;
+    left: -20px;
     transition: all .5s ease;
 }
 @media(min-width:1200px){
@@ -124,8 +131,9 @@ body{
     }
 }
 #content.active{
-    top: calc(-100vh + 310px);
+    top: calc(-100vh + 340px);
     transition: top 1s ease-out;
+    padding: 0;
 }
 #content.active .btn::before{
     transform: rotate(180deg);
@@ -185,22 +193,35 @@ body{
     }
 }
 #content #circle{
-    display: none;
+    /* display: none; */
+    position: relative;
+    border: 6px solid #f3cdd4;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(../images/UME_0084.jpg);
+    background-position: 53% 14%;
+    background-size: 320%;
+    margin: 0 auto 40px auto;
+    box-shadow: 0px 0px 15px #333 inset, 0px 0px 5px #985858;
 }
 @media(min-width:1200px){
     #content #circle{
         display: block;
-        position: relative;
         border: 6px solid #f3cdd4;
         width: 250px;
         height: 250px;
-        border-radius: 50%;
-        background-image: url(../images/UME_0084.jpg);
         background-position: 53% 14%;
         background-size: 260%;
         margin: 0 auto 40px auto;
         box-shadow: 0px 0px 15px #333 inset, 0px 0px 5px #985858;
     }
+}
+#content #circle img{
+    position: absolute;
+    top: -56px;
+    left: -54px;
+    width: 180%;
 }
 @media(min-width:1200px){
     #content #circle img{
