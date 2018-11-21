@@ -131,7 +131,7 @@ body{
     }
 }
 #content.active{
-    top: calc(-100vh + 340px);
+    top: calc(-100vh + 170px);
     transition: top 1s ease-out;
     padding: 0;
 }
