@@ -1,0 +1,222 @@
+body{
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+}
+@keyframes floatMove{
+    0%{top:0}
+    50%{top: 20px;}
+    100%{top: 0;}
+}
+@keyframes floatMove2{
+    0%{top:0}
+    50%{top: 10px;}
+    100%{top: 0;}
+}
+
+.container{
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+@media(min-width:1200px){
+    .container{
+        overflow: visible;
+        width: 1200px;
+        padding: 0 15px;
+    }
+}
+.card{
+    width: 100%;
+    background: #e87a90;
+    background: -moz-linear-gradient(top, #e87a90 1%, #fedfe1 100%);
+    background: -webkit-linear-gradient(top, #e87a90 1%,#fedfe1 100%);
+    background: linear-gradient(to bottom, #e87a90 1%,#fedfe1 100%);
+    overflow: hidden;
+    height: 100vh;
+}
+@media(min-width:1200px){
+    .card{
+        border: 15px solid #eee;
+        box-shadow: 0px 3px 10px rgba(0,0,0,.5) !important;
+        margin: 10px;
+        padding: 15px;
+        width: 500px;
+        height: 810px;
+    }
+}
+/*photo*/
+#myPhoto{
+    position: relative;
+    background-image: url(../images/UME_0122.jpg);
+    background-size: cover;
+}
+@media(min-width:1200px){
+    #myPhoto{
+        transform: rotate(-15deg);
+        z-index: 2;
+        margin-left: 80px;
+        animation: floatMove 7s ease-in-out infinite;
+    }
+}
+#slogan{
+    position: absolute;
+    width: 140%;
+    text-align: center;
+    background-color: rgba(255,255,255,.8);
+    padding: 10px;
+    bottom: 100px;
+    left: -60px;
+    font-size: 30px;
+    transform: rotate(-20deg);
+    
+}
+@media(min-width:1200px){
+    #slogan{
+        width: 700px;
+        padding: 10px;
+        text-align: center;
+        left: -40px;
+        right: -200px;
+        bottom: 50px;
+        transform: rotate(-30deg);
+        font-size: 40px;
+        box-shadow: 0px 3px 3px rgba(0,0,0,.5);
+    }
+}
+@keyframes jump{
+    0%{top:-50px}
+    50%{top: -60px;}
+    100%{top: -50px;}
+}
+#content{
+    position: relative;
+    top: -50px;
+    padding: 5px 0;
+    transition: top .5s ease-in;
+    border-radius: 10% 10% 0 0;
+    border: 10px solid #eee;
+    box-shadow: 0px -2px 3px rgba(0,0,0,.5);
+}
+.jump-ani{
+    animation: jump 1s linear infinite;
+}
+#content .btn{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+#content .btn::before{
+    position: absolute;
+    display: block;
+    content:'▲';
+    width: 10px;
+    height: 10px;
+    font-size: 18px;
+    /* background-color: #fff; */
+    top: 5px;
+    left: 65px;
+}
+@media(min-width:1200px){
+    #content .btn{
+        display: none;
+    }
+}
+#content.active{
+    top: calc(-100vh + 310px);
+    transition: top 1s ease-out;
+}
+/*content*/
+@media(min-width:1200px){
+    #content{
+        position: relative;
+        margin: 80px 40px 0 0;
+        transform: rotate(13deg);
+        padding: 5px;
+        height: 672px;
+        animation: floatMove2 5s ease-in-out infinite;
+    }
+}
+@media(min-width:1200px){
+    #content .square{
+        border: 2px solid #eee;
+        padding: 15px;
+        border-radius: 8% 8% 0 0;
+    }
+}
+#content h2{
+    display: none;
+}
+@media(min-width:1200px){
+    #content h2{
+        display: block;
+        color: #fff;
+        font-size: 70px;
+        text-align: center;
+    }
+}
+#content h4{
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+    margin: 15px 0;
+    padding: 0 0 30px 0;
+    border-bottom: 2px solid #fff;
+}
+@media(min-width:1200px){
+    #content h4{
+        font-size: 30px;
+    }
+}
+#content p{
+    font-size: 18px;
+    padding: 5px 0;
+    text-align: center;
+}
+@media(min-width:1200px){
+    #content p{
+        font-size: 20px;
+        padding: 2.8px 0;
+    }
+}
+#content #circle{
+    display: none;
+}
+@media(min-width:1200px){
+    #content #circle{
+        display: block;
+        position: relative;
+        border: 6px solid #f3cdd4;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-image: url(../images/UME_0084.jpg);
+        background-position: 53% 14%;
+        background-size: 260%;
+        margin: 0 auto 40px auto;
+        box-shadow: 0px 0px 15px #333 inset, 0px 0px 5px #985858;
+    }
+}
+@media(min-width:1200px){
+    #content #circle img{
+        position: absolute;
+        top: -61px;
+        left: -61px;
+        width: 150%;
+        transform: rotate(-100deg);
+    }
+}
+.particles-box{
+    display: none;
+}
+@media(min-width:1200px){
+    .particles-box{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 4px);
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+}
