@@ -64,7 +64,7 @@ body{
     text-align: center;
     background-color: rgba(255,255,255,.8);
     padding: 10px;
-    bottom: 100px;
+    bottom: 180px;
     left: -60px;
     font-size: 30px;
     transform: rotate(-20deg);
@@ -84,14 +84,14 @@ body{
     }
 }
 @keyframes jump{
-    0%{top:-50px}
+    0%{top:-80px}
     50%{top: -60px;}
-    100%{top: -50px;}
+    100%{top: -80px;}
 }
 #content{
     position: relative;
     top: -50px;
-    padding: 5px 0;
+    padding: 15px 0;
     transition: top .5s ease-in;
     border-radius: 10% 10% 0 0;
     border: 10px solid #eee;
