@@ -91,7 +91,7 @@ body{
 #content{
     position: relative;
     top: -50px;
-    padding: 5px 0;
+    padding: 5px 0; 
     transition: top .5s ease-in;
     border-radius: 10% 10% 0 0;
     border: 10px solid #eee;
@@ -116,6 +116,7 @@ body{
     /* background-color: #fff; */
     top: 5px;
     left: 65px;
+    transition: top .5s ease;
 }
 @media(min-width:1200px){
     #content .btn{
@@ -125,6 +126,10 @@ body{
 #content.active{
     top: calc(-100vh + 310px);
     transition: top 1s ease-out;
+}
+#content.active .btn::before{
+    transform: rotate(180deg);
+    top: 20px;
 }
 /*content*/
 @media(min-width:1200px){
