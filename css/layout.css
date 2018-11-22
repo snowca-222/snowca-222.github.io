@@ -31,7 +31,6 @@ body{
     background: -moz-linear-gradient(top, #e87a90 1%, #fedfe1 100%);
     background: -webkit-linear-gradient(top, #e87a90 1%,#fedfe1 100%);
     background: linear-gradient(to bottom, #e87a90 1%,#fedfe1 100%);
-    /* overflow: hidden; */
     height: 100%;
 }
 @media(min-width:1200px){
@@ -42,6 +41,7 @@ body{
         padding: 15px;
         width: 500px;
         height: 810px;
+        overflow: hidden;
     }
 }
 /*photo*/
